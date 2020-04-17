@@ -3,22 +3,91 @@ package project;
 
 import java.util.ArrayList;
 import java.util.List;
-
+import java.awt.Insets;
 import java.io.File;
 import java.io.StringWriter;
+
+import java.awt.*;
+//
+import java.io.*; 
+import javax.swing.*; 
+import java.awt.event.*; 
+import javax.swing.filechooser.*;
  
-import javax.xml.bind.JAXBContext;
-import javax.xml.bind.JAXBElement;
-import javax.xml.bind.JAXBException;
-import javax.xml.bind.Marshaller;
+//import javax.xml.bind.JAXBContext;
+//import javax.xml.bind.JAXBElement;
+//import javax.xml.bind.JAXBException;
+import javax.xml.bind.*;
 import javax.xml.datatype.DatatypeConfigurationException;
 import javax.xml.datatype.DatatypeFactory;
 import javax.xml.datatype.XMLGregorianCalendar;
+
+import java.awt.Dimension;
+import java.awt.GridLayout;
+import java.awt.Insets;
+
+import javax.swing.border.EmptyBorder;
 
 public class main {
 
 	public static void main(String[] args) throws DatatypeConfigurationException{
 		// TODO Auto-generated method stub
+		JFrame frame = new JFrame("Hello Swing");
+		frame.setPreferredSize(new Dimension(1000, 600));
+		JPanel panel = new JPanel();
+		BoxLayout boxlayout = new BoxLayout(panel, BoxLayout.Y_AXIS);
+        panel.setLayout(boxlayout);
+        panel.setBorder(new EmptyBorder(new Insets(45, 70, 45, 70)));
+        
+        
+        JTextField textfield = new JTextField();
+        textfield.setPreferredSize(new Dimension(600, 400));
+        panel.add(textfield);     
+        JButton jb1 = new JButton("Chunk it");
+//        JButton jb2 = new JButton("Button 2");
+        panel.add(jb1); 
+//        panel.add(jb2);
+        frame.setLayout(new GridLayout(2, 1));
+        frame.add(panel);
+        frame.pack();
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setVisible(true);
+        
+        jb1.addActionListener(new ActionListener() {
+  	      
+  	      @Override
+  	      public void actionPerformed(ActionEvent arg0) {
+  	    	JFrame f=new JFrame("Id"); 
+  	    	f.setPreferredSize(new Dimension(1000, 600));
+  	        JTextField tx= new JTextField();
+//  	        tx.setPreferredSize(new Dimension(60, 40));
+  	        tx.setBounds(555, 70, 240, 30);
+  	    	f.add(tx);
+  	    	
+  	    	JLabel label = new JLabel();        
+  	    	label.setText("Enter Id  :");
+  	    	label.setBounds(410, 10, 200, 150);
+  	    	f.add(label);
+  	    	JButton b=new JButton("Ok");
+//  	    	b.setPreferredSize(new Dimension(20,10));
+  	    	b.setBounds(650,120,110, 30);
+  	    	f.add(b);
+  	    	f.setLayout(null);
+  	    	f.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+  	    	f.pack();
+  	        f.setVisible(true);
+  	        b.addActionListener(new ActionListener() {
+  		      
+  		      @Override
+  		      public void actionPerformed(ActionEvent e) {
+  		    	  f.dispose();
+  		      }
+  		              
+  		    });
+  	      }
+  	              
+  	    });
+        
 		List<Text> t = new ArrayList<Text>();
 		Text t1 = new Text();
 		t1.settext("hii there");
@@ -42,11 +111,7 @@ public class main {
 		d.setdescription("Project description");
 		LastModified ld = new LastModified();
 		String isoDateTime = "2020-04-13T17:39:00Z";
-	    XMLGregorianCalendar dateXMLGreg = DatatypeFactory.newInstance()
-	            .newXMLGregorianCalendar(isoDateTime);
-//	    XMLGregorianCalendar time = DatatypeFactory.newInstance()
-//	    		  .newXMLGregorianCalendarTime(xgc.getHour(), xgc.getMinute(), xgc.getSecond(), 
-//	    		      xgc.getFractionalSecond(), xgc.getTimezone());
+	    XMLGregorianCalendar dateXMLGreg = DatatypeFactory.newInstance().newXMLGregorianCalendar(isoDateTime);
 	    DateAndTime dt = new DateAndTime();
 	    dt.setDate(dateXMLGreg);
 	    dt.setTime(dateXMLGreg);
