@@ -59,18 +59,49 @@ public class main {
   	      public void actionPerformed(ActionEvent arg0) {
   	    	JFrame f=new JFrame("Id"); 
   	    	f.setPreferredSize(new Dimension(1000, 600));
-  	        JTextField tx= new JTextField();
-//  	        tx.setPreferredSize(new Dimension(60, 40));
-  	        tx.setBounds(555, 70, 240, 30);
-  	    	f.add(tx);
+  	        JTextField tid= new JTextField();
+  	        tid.setBounds(200,50,150,25);
+  	    	f.add(tid);
+  	    	JLabel idLabel = new JLabel("Id:");
+  	    	idLabel.setBounds(25,50,75,25);
+  	    	f.add(idLabel);
   	    	
-  	    	JLabel label = new JLabel();        
-  	    	label.setText("Enter Id  :");
-  	    	label.setBounds(410, 10, 200, 150);
-  	    	f.add(label);
+  	    	
+  	    	JTextField tauthor= new JTextField();
+  	    	tauthor.setBounds(200,100,200,25);
+  	    	f.add(tauthor);
+  	    	JLabel authorLabel = new JLabel("Author name:");
+  	    	authorLabel.setBounds(25,100,150,25);
+  	    	f.add(authorLabel);
+  	    	
+  	    	
+  	    	JTextField Textitle= new JTextField();
+  	    	Textitle.setBounds(200,150,300,25);
+  	    	f.add(Textitle);
+  	    	JLabel TitleLabel = new JLabel("Title:");
+  	    	TitleLabel.setBounds(25,150,75,25);
+  	    	f.add(TitleLabel);
+  	    	
+  	    	JTextField TexDescrption= new JTextField();
+  	    	TexDescrption.setBounds(200,200,300,100);
+  	    	f.add(TexDescrption);
+  	    	JLabel DescrptionLabel = new JLabel("Descrption:");
+  	    	DescrptionLabel.setBounds(25,200,150,25);
+  	    	f.add(DescrptionLabel);
+  	    	
+  	    	JTextField TexEmail= new JTextField();
+  	    	TexEmail.setBounds(200,325,300,25);
+  	    	f.add(TexEmail);
+  	    	JLabel EmailLabel = new JLabel("Email:");
+  	    	EmailLabel.setBounds(25,325,75,25);
+  	    	f.add(EmailLabel);
+//  	    	JLabel label = new JLabel();        
+//  	    	label.setText("Enter Id  :");
+//  	    	label.setBounds(410, 10, 200, 150);
+//  	    	f.add(label);
   	    	JButton b=new JButton("Ok");
 //  	    	b.setPreferredSize(new Dimension(20,10));
-  	    	b.setBounds(650,120,110, 30);
+  	    	b.setBounds(100,500,110, 30);
   	    	f.add(b);
   	    	f.setLayout(null);
   	    	f.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
@@ -125,7 +156,7 @@ public class main {
 		metadata meta = new metadata();
 		meta.setcontactInfo(md);
 		ChunkType ch = new ChunkType(); 
-		ch.setText(t);
+		ch.setText(t3);
 		ch.setmetadata(meta);
 		List<ChunkType> chunks = new ArrayList<ChunkType>();
 		chunks.add(ch);
