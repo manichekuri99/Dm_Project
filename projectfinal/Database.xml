@@ -1,21 +1,59 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Database>
     <chunk>
-        <text id="10">&amp;lt;p class=&amp;quot;m-0 pt-1 text-white &amp;quot;&amp;gt;   &amp;amp;#169; 2020 &amp;lt;a href=&amp;quot;/&amp;quot;&amp;gt;MedCrave Group Kft&amp;lt;/a&amp;gt;, All rights reserved.    No part of this content may be reproduced or transmitted in any form    or by any means as per the standard guidelines of fair use.&amp;lt;br&amp;gt;&amp;lt;img src=&amp;quot;https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-nc.eu.svg&amp;quot; style=&amp;quot;width: 60px&amp;quot;&amp;gt;Open    Access by &amp;lt;a href=&amp;quot;/&amp;quot;&amp;gt;MedCrave Group Kft&amp;lt;/a&amp;gt; is licensed under a    Creative Commons Attribution 4.0 International License. Based on a    work at &amp;lt;a href=&amp;quot;/&amp;quot;&amp;gt;https://medcraveonline.com&amp;lt;/a&amp;gt;&amp;lt;br&amp;gt;Best viewed in    Mozilla Firefox | Google Chrome | Above IE 7.0 version | Opera | &amp;lt;a href=&amp;quot;https://medcraveonline.com/privacy-policy&amp;quot;&amp;gt;Privacy    Policy&amp;lt;/a&amp;gt; &amp;lt;/p&amp;gt;</text>
+        <text id="30">&amp;lt;p class=&amp;quot;legalCopy&amp;quot;&amp;gt;
+  &amp;lt;small&amp;gt;&amp;lt;font size=&amp;quot;-1&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;http://bugreport.sun.com/bugreport/&amp;quot;&amp;gt;Submit 
+  a bug or feature&amp;lt;/a&amp;gt;&amp;lt;br&amp;gt;For further API reference and developer 
+  documentation, see &amp;lt;a href=&amp;quot;http://docs.oracle.com/javase/7/docs/index.html&amp;quot; target=&amp;quot;_blank&amp;quot;&amp;gt;Java 
+  SE Documentation&amp;lt;/a&amp;gt;. That documentation contains more detailed, 
+  developer-targeted descriptions, with conceptual overviews, definitions 
+  of terms, workarounds, and working code examples.&amp;lt;br&amp;gt;&amp;lt;a href=&amp;quot;../../../legal/cpyr.html&amp;quot;&amp;gt;Copyright&amp;lt;/a&amp;gt; 
+  &amp;amp;#169; 1993, 2018, Oracle and/or its affiliates. All rights reserved. Use is 
+  subject to &amp;lt;a href=&amp;quot;http://download.oracle.com/otndocs/jcp/java_se-7-mrel-spec/license.html&amp;quot;&amp;gt;license 
+  terms&amp;lt;/a&amp;gt;. Also see the &amp;lt;a target=&amp;quot;_blank&amp;quot; href=&amp;quot;http://www.oracle.com/technetwork/java/redist-137594.html&amp;quot;&amp;gt;documentation 
+  redistribution policy&amp;lt;/a&amp;gt;. &amp;lt;/font&amp;gt;&amp;lt;/small&amp;gt;
+&amp;lt;/p&amp;gt;</text>
         <metadata>
-            <Title>Html</Title>
-            <description>nothing</description>
-            <Author>bala</Author>
-            <Contact_Email>manichekuri99@gamil.com</Contact_Email>
+            <Title>Editorpane</Title>
+            <description>doc</description>
+            <Author>oracle</Author>
+            <Contact_Email>maniche@gmail.com</Contact_Email>
         </metadata>
     </chunk>
     <chunk>
-        <text id="20">  &amp;lt;p style=&amp;quot;margin-bottom: 0px&amp;quot;&amp;gt; &amp;lt;!--820W--&amp;gt; 929 NW 164&amp;lt;sup&amp;gt;th&amp;lt;/sup&amp;gt; Street, Edmond, OK 73013 (Mailing Address) &amp;lt;font size=&amp;quot;smaller&amp;quot; color=&amp;quot;white&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;https://medcraveonline.com/locations&amp;quot;&amp;gt;&amp;lt;button style=&amp;quot;padding-top: 0px; padding-bottom: 0px; padding-right: 2px; padding-left: 2px; background-color: #0072bc&amp;quot;&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;/font&amp;gt;&amp;lt;a href=&amp;quot;https://medcraveonline.com/locations&amp;quot;&amp;gt;More  Locations&amp;lt;/button&amp;gt;&amp;lt;/a&amp;gt;   &amp;lt;/p&amp;gt;</text>
+        <text id="50">&amp;lt;h4&amp;gt;
+  paramString
+&amp;lt;/h4&amp;gt;
+&amp;lt;pre&amp;gt;protected&amp;amp;#160;&amp;lt;a href=&amp;quot;../../java/lang/String.html&amp;quot; title=&amp;quot;class in java.lang&amp;quot;&amp;gt;String&amp;lt;/a&amp;gt;&amp;amp;#160;paramString()&amp;lt;/pre&amp;gt;
+&amp;lt;div class=&amp;quot;block&amp;quot;&amp;gt;
+  Returns a string representation of this &amp;lt;code&amp;gt;JEditorPane&amp;lt;/code&amp;gt;. 
+  This method is intended to be used only for debugging 
+  purposes, and the content and format of the returned 
+  string may vary between implementations. The returned 
+  string may be empty but may not be &amp;lt;code&amp;gt;null&amp;lt;/code&amp;gt;.
+&amp;lt;/div&amp;gt;</text>
         <metadata>
-            <Title>Html</Title>
-            <description>nnn</description>
-            <Author>ba</Author>
-            <Contact_Email>manichekuri@gmail.com</Contact_Email>
+            <Title>editorpane</Title>
+            <description>heading</description>
+            <Author>oracle</Author>
+            <Contact_Email>mani@gmail.com</Contact_Email>
+        </metadata>
+    </chunk>
+    <chunk>
+        <text id="60">&amp;lt;p class=&amp;quot;lead&amp;quot;&amp;gt;
+  Most web applications are changed and adapted quite frequently and 
+  quickly. Their environment, for example the size and the behaviour 
+  of the user base, are constantly changing. What was sufficient 
+  yesterday can be insufficient today. Especially in a web environment 
+  it is important to monitor and continuously improve the internal 
+  quality not only when developing, but also when maintaining the 
+  software.
+&amp;lt;/p&amp;gt;</text>
+        <metadata>
+            <Title>kasjdbi</Title>
+            <description>sddidbvlihsd</description>
+            <Author>jenkins</Author>
+            <Contact_Email>majj@gmai.com</Contact_Email>
         </metadata>
     </chunk>
 </Database>

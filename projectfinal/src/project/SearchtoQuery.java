@@ -233,6 +233,7 @@ public class SearchtoQuery{
 			    	  if(Chunkscount+1 == chunksText.size()) {
 			    		  FinalChunks.add(StringEscapeUtils.unescapeXml(chunksText.get(Chunkscount)));
 			    		  write(FinalChunks);
+			    		  Chunkscount = 0;
 			    		  Qframe.dispose();
 			    	  }
 			    	  else {
@@ -249,6 +250,7 @@ public class SearchtoQuery{
 			      public void actionPerformed(ActionEvent e) {
 			    	  if(Chunkscount+1 == chunksText.size()) {
 			    		  write(FinalChunks);
+			    		  Chunkscount = 0;
 			    		  Qframe.dispose();
 			    	  }
 			    	  else {

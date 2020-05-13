@@ -25,7 +25,8 @@ public class Demo {
     public Demo(String filepath) {
 //    	System.out.println(filepath);
     	Path src = Paths.get(filepath);
-		Path des = Paths.get("/home/bala/Desktop/MYCLG/8_th/Data   Modeling/Project/projectfinal/build/classes/net/atlanticbb/tantlinger/shef/data.html");
+//		Path des = Paths.get("/home/bala/Desktop/MYCLG/8_th/Data   Modeling/Project/projectfinal/build/classes/net/atlanticbb/tantlinger/shef/data.html");
+		Path des = Paths.get("./build/classes/net/atlanticbb/tantlinger/shef/Dowmload.html");
 		try{	
 			Files.copy(src, des, StandardCopyOption.REPLACE_EXISTING);
 		}
@@ -33,7 +34,7 @@ public class Demo {
 		    System.err.format("I/O Error when copying file");
 		}
 		editor = new HTMLEditorPane();
-        InputStream in = Demo.class.getResourceAsStream("/net/atlanticbb/tantlinger/shef/data.html");
+        InputStream in = Demo.class.getResourceAsStream("/net/atlanticbb/tantlinger/shef/Dowmload.html");
         try{
             editor.setText(IOUtils.read(in));
         }catch(IOException ex) {
@@ -42,7 +43,7 @@ public class Demo {
             IOUtils.close(in);
         }
 
-//        JFrame frame = new JFrame();
+        JFrame frame = new JFrame();
 //        panel.setLayout(new BorderLayout());
 //        System.out.println("Came to Demo");
 //        JMenuBar menuBar = new JMenuBar();
@@ -50,17 +51,18 @@ public class Demo {
 //        menuBar.add(editor.getFormatMenu());
 //        menuBar.add(editor.getInsertMenu());
 //        editor.add(menuBar);
-//        panel.add(menuBar);
-//        panel.add(editor);
+////        panel.add(menuBar);
+////        panel.add(editor);
 //        frame.setJMenuBar(menuBar);
-//        
-//        frame.setTitle("HTML Editor Demo");
-//        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-//        frame.setSize(800, 600);
-//        frame.getContentPane().add(editor);
-////        frame.add(editor);
-//        frame.setVisible(true);
-        System.out.println(" Came to Sheff");
+        frame.getContentPane().add(editor);
+        
+        frame.setTitle("HTML Editor Demo");
+        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        frame.setSize(800, 600);
+       
+//        frame.add(editor);
+        frame.setVisible(true);
+//        System.out.println(" Came to Sheff");
         
     }
     public HTMLEditorPane geteditor() {

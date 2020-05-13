@@ -38,7 +38,7 @@ public class DemoAssembling {
     public DemoAssembling(String filepath) {
 //    	System.out.println(filepath);
     	Path src = Paths.get(filepath);
-		Path des = Paths.get("/home/bala/Desktop/MYCLG/8_th/Data   Modeling/Project/projectfinal/build/classes/net/atlanticbb/tantlinger/shef/final.html");
+		Path des = Paths.get("./build/classes/net/atlanticbb/tantlinger/shef/final.html");
 		try{	
 			Files.copy(src, des, StandardCopyOption.REPLACE_EXISTING);
 		}
@@ -80,15 +80,18 @@ public class DemoAssembling {
                 // int userSelection = fileChooser.showSaveDialog(this);
 		            if (userSelection == JFileChooser.APPROVE_OPTION) {
 			               fileToSave = saveFile.getSelectedFile();
-			                  System.out.println("Save as file: " + fileToSave.getAbsolutePath());
+//			                  System.out.println("Save as file: " + fileToSave.getAbsolutePath());
 //			                  write(fileToSave.getAbsolutePath());
 		            }
 	        	try{
 	        		OutputStream os = new FileOutputStream(fileToSave.getAbsolutePath());
 	                PdfRendererBuilder builder = new PdfRendererBuilder();
 	                builder.useFastMode();
-	                String fileurl = "file:///home/bala/Desktop/MYCLG/8_th/Data   Modeling/Project/projectfinal/build/classes/resources/convert2pdf.html";
-	                write("/home/bala/Desktop/MYCLG/8_th/Data   Modeling/Project/projectfinal/build/classes/resources/convert2pdf.html");
+	                
+	                File myFoo = new File("./build/classes/resources/convert2pdf.html");
+	                write(myFoo);
+//	                String fileurl = "file:///home/bala/Desktop/MYCLG/8_th/Data   Modeling/Project/projectfinal/build/classes/resources/convert2pdf.html";
+	                String fileurl = "file://"+myFoo.getAbsolutePath();
 	                builder.withW3cDocument(html5ParseDocument(fileurl, 10), fileurl);
 	                builder.toStream(os);
 	                builder.run();
@@ -108,8 +111,10 @@ public class DemoAssembling {
                 // int userSelection = fileChooser.showSaveDialog(this);
 		            if (userSelection == JFileChooser.APPROVE_OPTION) {
 			               File fileToSave = saveFile.getSelectedFile();
-			                  System.out.println("Save as file: " + fileToSave.getAbsolutePath());
-			                  write(fileToSave.getAbsolutePath());
+//			                  System.out.println("Save as file: " + fileToSave.getAbsolutePath());
+//			                  write(fileToSave.getAbsolutePath());
+			                  File myFoo = new File(fileToSave.getAbsolutePath());
+				              write(myFoo);
 		            }
 	         }  
 	                
@@ -117,10 +122,10 @@ public class DemoAssembling {
         
         
     }
-    public void write(String s) {
+    public void write(File myFoo) {
   	  try {
 //  		  String path = s + "Data.html";
-  		  File myFoo = new File(s);
+  		  
   		  FileWriter myWriter = new FileWriter(myFoo, false);
   	      
   	      myWriter.write(editor.getText());

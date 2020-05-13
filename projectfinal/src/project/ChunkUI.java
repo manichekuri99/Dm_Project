@@ -69,8 +69,8 @@ public class ChunkUI {
   	        JTextField tid= new JTextField();
   	        tid.setBounds(200,50,150,25);
   	    	f.add(tid);
-  	    	JLabel idLabel = new JLabel("Id:");
-  	    	idLabel.setBounds(25,50,75,25);
+  	    	JLabel idLabel = new JLabel("Id(interger only):");
+  	    	idLabel.setBounds(25,50,150,25);
   	    	f.add(idLabel);
   	    	
   	    	
@@ -92,17 +92,20 @@ public class ChunkUI {
   	    	JTextField TexDescrption= new JTextField();
   	    	TexDescrption.setBounds(200,200,300,100);
   	    	f.add(TexDescrption);
-  	    	JLabel DescrptionLabel = new JLabel("Descrption:");
+  	    	JLabel DescrptionLabel = new JLabel("Description:");
   	    	DescrptionLabel.setBounds(25,200,150,25);
   	    	f.add(DescrptionLabel);
   	    	
   	    	JTextField TexEmail= new JTextField();
+  	    	
   	    	TexEmail.setBounds(200,325,300,25);
   	    	f.add(TexEmail);
   	    	JLabel EmailLabel = new JLabel("Email:");
   	    	EmailLabel.setBounds(25,325,75,25);
   	    	f.add(EmailLabel);
-
+  	    	JLabel Label = new JLabel("Emailpattern:someone@some.com");
+  	    	Label.setBounds(25,350,300,25);
+  	    	f.add(Label);
   	    	JButton b=new JButton("Ok");
   	    	b.setBounds(100,500,110, 30);
   	    	f.add(b);
